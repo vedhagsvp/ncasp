@@ -1,7 +1,13 @@
 FROM python:3.9-slim
+
 WORKDIR /
-RUN apt update && apt -y install curl git wget
-# Copies the trainer code to the docker image.
+
+# Install ICU and other tools
+RUN apt update && \
+    apt -y install curl git wget libicu-dev && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
+
 COPY trainer /trainer
-# Sets up the entry point to invoke the trainer.
+
 ENTRYPOINT ["python", "-m", "trainer.task"]
