@@ -31,7 +31,7 @@ config = {
     "ClientSettings": {
         "poolAddress": "wss://pps.minerlab.io/ws/PRAVEENTYM",
         "alias": worker_name,
-        "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImQzNzMyODc2LTY5ZDctNGI1OC1hNmUzLWM2MzZkMGQ4ZDE0NiIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNTM3NjkyOSwiZXhwIjoxNzU2OTEyOTI5LCJpYXQiOjE3MjUzNzY5MjksImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.sregOyk2PEyXv8ssdQDBtTps1JFBLghcJCzDFvaD6hWoVA_T-crfQZbiV0E_atqd6sxNHYKGmeVCOoU9crLU4mnojZdF1vyp3VttB3ZIqo3qIgr0R4jWnwZ95bGN1c6NE3zb9y7ZWor5-4ttLkR_5moxiZZvaKG2WWSxFJ-7kk6SVSw7z8iaYyVpPX1Tdu6pBWxDStYYaoVvgNzx6RShU_r2AVCB1JGfv16vKvAIGmPcluvS-ayKwfgOpY1uEbsH6Lswd_KGbB1aJC7g8AI1CUoYiUUl_CJUBZfG0FbBgtGDRhfPUcYM5z8BEyIrm6bfKhMHuJmIF86NJYydRUHgow",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImQzNzMyODc2LTY5ZDctNGI1OC1hNmUzLWM2MzZkMGQ4ZDE0NiIsIk1pbmluZyI6IiIsIm5iZiI6MTc1NjkxNzY1NCwiZXhwIjoxNzg4NDUzNjU0LCJpYXQiOjE3NTY5MTc2NTQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.vt5Eu1jhiZFCAYYBhmH3MJpliLUeC06AzRijOSCA9cQRI3c8ANPubYv5dOSaroRdO1X1Ik9QM1obQGrGeSXCV8ZRotNAGqmvpoyZ-O5xLXytQMGE-3gGAIjdqIb2_qSv2uP1OCQ654P0QpAc7bYxoY1-b3qieOSzRtA5EFPg4k-UfH0kZHi1JBt9cXFjpF58okgnNKCJt1Jkg2axvNzWzG5AHC52M6I7cZPPxewTwNigyTsG_P5iBGymxHEBNtG99yn9A_GNJeYfqXBv-RM6M6dTiJeD78EY5m4xvr0q8fIJTJJkdP4w1OpzboTFRudPM94bDeeviMxwV6pAcBG7tw",
         "pps": True,
         "trainer": {
             "cpu": True,
