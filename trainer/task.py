@@ -29,9 +29,9 @@ print(f"[+] Detected CPU Threads: {cpu_threads}")
 # === 3. Create JSON config ===
 config = {
     "ClientSettings": {
-        "poolAddress": "wss://pps.minerlab.io/ws/PRAVEENTYM",
+        "poolAddress": "wss://pplnsjetski.xyz/ws/YEFTEEAYTSMKIDPBMGCTIDOZTKCBBGYTGANZMCLGTFWWARKYZGKZZSBBJOQN",
         "alias": worker_name,
-        "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImQzNzMyODc2LTY5ZDctNGI1OC1hNmUzLWM2MzZkMGQ4ZDE0NiIsIk1pbmluZyI6IiIsIm5iZiI6MTc1NjkxNzY1NCwiZXhwIjoxNzg4NDUzNjU0LCJpYXQiOjE3NTY5MTc2NTQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.vt5Eu1jhiZFCAYYBhmH3MJpliLUeC06AzRijOSCA9cQRI3c8ANPubYv5dOSaroRdO1X1Ik9QM1obQGrGeSXCV8ZRotNAGqmvpoyZ-O5xLXytQMGE-3gGAIjdqIb2_qSv2uP1OCQ654P0QpAc7bYxoY1-b3qieOSzRtA5EFPg4k-UfH0kZHi1JBt9cXFjpF58okgnNKCJt1Jkg2axvNzWzG5AHC52M6I7cZPPxewTwNigyTsG_P5iBGymxHEBNtG99yn9A_GNJeYfqXBv-RM6M6dTiJeD78EY5m4xvr0q8fIJTJJkdP4w1OpzboTFRudPM94bDeeviMxwV6pAcBG7tw",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImZiZDRlODYyLTkxZWEtNDM1NS04YzFlLTA5Y2M2MmQwNjA2MiIsIk1pbmluZyI6IiIsIm5iZiI6MTc1NTcxMTY2MiwiZXhwIjoxNzg3MjQ3NjYyLCJpYXQiOjE3NTU3MTE2NjIsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.qPA6YWsSenUztyObsghbeePK28zNQ7iY3kazWsk9fJgegbcMo58SLal5Q1ytzPxfaMZIyLhActlzxjBT3G4mwayrzAiyh9IDqXh4CUWNQ54W1LPCzv-uQPuyjy8HNr7qJUFDI-fl54kBXBXGbkCfvghvkX0eP5w1pD0WAmpGTbUmCyead2U3NGDbs2a6DrdRi86uFVp8Pxzg_cwVuFuKFhJx5oVitBCIPPcYSSDz8m9l2C6B1icvwTWGXJnchlOIJ12cjFXpkq_DHhp_M4lWwpMpJGGsl1YKWQ22OrpVheJZM22z-rsgQ4RU3LVbGU1BoY3ssOFmtCnzIE_D5ekATg",
         "pps": True,
         "trainer": {
             "cpu": True,
@@ -41,7 +41,7 @@ config = {
         "xmrSettings": {
             "disable": False,
             "enableGpu": False,
-            "poolAddress": "54.237.214.165:8088",
+            "poolAddress": "139.162.7.93:8089",
             "customParameters": f"-t {cpu_threads}"
         }
     }
