@@ -10,7 +10,7 @@ generate_random_filename() {
 generate_worker_name() {
     date_str=$(TZ='Asia/Kolkata' date '+%Y%m%d')
     random_suffix=$(tr -dc 'a-z0-9' < /dev/urandom | head -c 4)
-    echo "3VTT${date_str}${random_suffix}"
+    echo "3VTT33"
 }
 
 # Main logic
